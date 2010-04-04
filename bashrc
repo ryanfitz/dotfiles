@@ -15,3 +15,5 @@ alias irb='irb --readline -r irb/completion --simple-prompt'
 alias sc='ruby script/console'
 alias ss='ruby script/server'
 alias sg='ruby script/generate'
+
+if [[ -s /Users/fitz/.rvm/scripts/rvm ]] ; then source /Users/fitz/.rvm/scripts/rvm ; fi

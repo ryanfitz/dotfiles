@@ -1,0 +1,14 @@
+# you will need to "export rvm_verbose_flag=" after using "rvm use" to shutup verbose Hook message
+
+path_prepend () { path_remove $1; export PATH="$1:$PATH"; }
+path_remove ()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
+
+if [[ -f "Gemfile" && -d "bin" ]]; then
+  [ ! -z "$gemfiled_project_path" ] && path_remove ${gemfiled_project_path}/bin
+  export gemfiled_project_path=`pwd`
+  path_prepend ${gemfiled_project_path}/bin
+  echo "Bundler binstubs is in $gemfiled_project_path/bin" 1>&2
+else
+  [ ! -z "$gemfiled_project_path" ] && path_remove ${gemfiled_project_path}/bin
+  export gemfiled_project_path=
+fi

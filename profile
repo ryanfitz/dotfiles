@@ -8,4 +8,4 @@ source $HOME/.bashrc
 export NARWHAL_ENGINE=jsc
 export NODE_PATH=/usr/local/lib/node
 
-export PATH="$NODE_PATH:/usr/local/narwhal/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="~/bin:$NODE_PATH:/usr/local/narwhal/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"

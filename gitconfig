@@ -1,0 +1,15 @@
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+	interactive = auto
+[user]
+	name = Ryan Fitzgerald
+	email = ryan@codebrewstudios.com
+[format]
+	pretty = oneline
+[alias]
+	co = checkout
+	ci = commit
+[github]
+	user = ryanfitz

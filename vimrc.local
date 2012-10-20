@@ -1,0 +1,9 @@
+set expandtab
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
+set background=dark
+let g:solarized_termcolors=16
+colorscheme solarized
+let g:Powerline_symbols="fancy"

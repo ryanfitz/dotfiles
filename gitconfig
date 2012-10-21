@@ -7,11 +7,12 @@
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old = red
+  new = cyan
 [user]
-  name = Ryan Fitzgerald
+	name = Ryan Fitzgerald
   mail = ryan@codebrewstudios.com
+	email = ryan@codebrewstudios.com
 [format]
   pretty = oneline
 [alias]

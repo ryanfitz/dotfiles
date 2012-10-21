@@ -1,15 +1,21 @@
 [color]
-	diff = auto
-	branch = auto
-	status = auto
-	interactive = auto
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [user]
-	name = Ryan Fitzgerald
-	email = ryan@codebrewstudios.com
+  name = Ryan Fitzgerald
+  mail = ryan@codebrewstudios.com
 [format]
-	pretty = oneline
+  pretty = oneline
 [alias]
-	co = checkout
-	ci = commit
+  co = checkout
+  ci = commit
 [github]
-	user = ryanfitz
+  user = ryanfitz

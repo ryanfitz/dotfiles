@@ -9,6 +9,10 @@
   frag = magenta bold
   old = red
   new = cyan
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [user]
 	name = Ryan Fitzgerald
   mail = ryan@codebrewstudios.com

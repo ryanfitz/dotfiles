@@ -18,7 +18,7 @@ set $mod Mod4
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
 bindsym $mod+t border normal
-bindsym $mod+y border normal
+bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 new_window 1pixel
 
@@ -148,6 +148,10 @@ bar {
         mode hide
         status_command i3status
 }
+
+# custom window settings
+for_window [class="Gvim"] border none
+for_window [class="^Google-chrome$"] border none
 
 # application binds
 bindsym $mod+b exec google-chrome

@@ -1,1 +1,4 @@
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+
+set guioptions-=m
+set showtabline=1

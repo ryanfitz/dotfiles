@@ -3,10 +3,14 @@ set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 
-set t_Co=256
+" set t_Co=256
 set background=dark
-let g:solarized_termcolors=16
-let g:solarized_visibility="normal"
-colorscheme solarized
-" colorscheme mustang
+" let g:solarized_termcolors=256
+" let g:solarized_visibility="normal"
+let g:molokai_original=1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#272822   ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3E3D32   ctermbg=235
+
+colorscheme molokai
 let g:Powerline_symbols="fancy"

@@ -1,6 +1,8 @@
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+set guifont=Source\ Code\ Pro\ Light:h11
 
 let g:indent_guides_auto_colors = 1
 
 set guioptions-=m
+set guioptions-=L
 set showtabline=1
+set transparency=0

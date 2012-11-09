@@ -33,5 +33,9 @@ plugins=(git osx brew node npm rbenv ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
+NPM_MODULE_PATH=/usr/local/share/npm/bin
+
 # Customize to your needs...
-export PATH=$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$HOME/bin:$NPM_MODULE_PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+eval "$(rbenv init -)"

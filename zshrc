@@ -36,6 +36,6 @@ source $ZSH/oh-my-zsh.sh
 NPM_MODULE_PATH=/usr/local/share/npm/bin
 
 # Customize to your needs...
-export PATH=$HOME/bin:$NPM_MODULE_PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$HOME/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 eval "$(rbenv init -)"

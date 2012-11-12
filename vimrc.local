@@ -1,4 +1,6 @@
 set nospell
+" clipboard support for mac
+set clipboard=unnamed
 
 set expandtab
 set shiftwidth=2

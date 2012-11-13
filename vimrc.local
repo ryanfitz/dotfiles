@@ -1,4 +1,6 @@
 set nospell
+nnoremap <esc> :noh<return><esc>
+
 " clipboard support for mac
 set clipboard=unnamed
 

@@ -1,5 +1,5 @@
 set nospell
-nnoremap <esc> :noh<return><esc>
+nmap <silent> <C-N> :silent noh<CR>
 
 " clipboard support for mac
 set clipboard=unnamed

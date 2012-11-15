@@ -24,3 +24,5 @@
   ci = commit
 [github]
   user = ryanfitz
+[core]
+  ditor = vi

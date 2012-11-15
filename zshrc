@@ -36,6 +36,7 @@ source $ZSH/oh-my-zsh.sh
 NPM_MODULE_PATH=/usr/local/share/npm/bin
 DART_SDK=$HOME/bin/dart/dart-sdk
 
+export EDITOR=vim
 # Customize to your needs...
 export PATH=$HOME/bin:$DART_SDK/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 

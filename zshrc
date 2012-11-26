@@ -35,10 +35,11 @@ source $ZSH/oh-my-zsh.sh
 
 NPM_MODULE_PATH=/usr/local/share/npm/bin
 DART_SDK=$HOME/bin/dart/dart-sdk
+ANDROID_SDK=$HOME/bin/adt-bundle-mac/sdk
 
 export EDITOR=vim
 # Customize to your needs...
-export PATH=$HOME/bin:$DART_SDK/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$DART_SDK/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"

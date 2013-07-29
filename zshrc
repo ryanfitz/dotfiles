@@ -36,14 +36,24 @@ source $ZSH/oh-my-zsh.sh
 NPM_MODULE_PATH=/usr/local/share/npm/bin
 DART_SDK=$HOME/bin/dart/dart-sdk
 ANDROID_SDK=$HOME/bin/adt-bundle-mac/sdk
+PYTHON_PATH=/usr/local/share/python
 
+export ANDROID_HOME=$ANDROID_SDK
 export EDITOR=vim
 # Customize to your needs...
-export PATH=$HOME/bin:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$DART_SDK/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:$PYTHON_PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$DART_SDK/bin:$NPM_MODULE_PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
 export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
+export AWS_CLOUDFORMATION_HOME="/usr/local/Cellar/aws-cfn-tools/1.0.11/jars"
+export AWS_CREDENTIAL_FILE="$HOME/.ec2/AWSCredentials.txt"
 
+export AWS_CONFIG_FILE="$HOME/.ec2/personal/config.txt"
+
+source /Users/fitz/.nvm/nvm.sh
 eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

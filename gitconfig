@@ -25,4 +25,4 @@
 [github]
   user = ryanfitz
 [core]
-  ditor = vi
+ editor = /usr/local/bin/vim

@@ -29,7 +29,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew node npm rbenv ssh-agent)
+plugins=(git osx brew node npm rbenv ssh-agent go)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -52,8 +52,29 @@ export AWS_CREDENTIAL_FILE="$HOME/.ec2/AWSCredentials.txt"
 
 export AWS_CONFIG_FILE="$HOME/.ec2/personal/config.txt"
 
+export GOPATH=$HOME/go
+
 source /Users/fitz/.nvm/nvm.sh
+source /usr/local/bin/aws_zsh_completer.sh
 eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+function dev_instance_id() {
+  aws ec2 describe-instances --filters "Name=tag:Name,Values=dev-instance-ryan" --query "Reservations[0].Instances[0].InstanceId" --profile dev --output text
+}
+
+function dev_instance_hostname() {
+  aws ec2 describe-instances --filters "Name=tag:Name,Values=dev-instance-ryan" --query "Reservations[0].Instances[0].PublicDnsName" --profile dev --output text
+}
+
+function start-dev-instance() {
+  awsid=$( dev_instance_id )
+  aws ec2 start-instances --instance-ids ${awsid} --profile dev
+}
+
+function ssh-dev() {
+  awshost=$( dev_instance_hostname )
+  ssh -l ec2-user ${awshost}
+}

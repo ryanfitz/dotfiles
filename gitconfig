@@ -15,8 +15,8 @@
   untracked = cyan
 [user]
 	name = Ryan Fitzgerald
-  mail = ryan@codebrewstudios.com
-	email = ryan@codebrewstudios.com
+  mail = ryan.fitz1@gmail.com
+  email = ryan.fitz1@gmail.com
 [format]
   pretty = oneline
 [alias]
@@ -25,4 +25,4 @@
 [github]
   user = ryanfitz
 [core]
- editor = /usr/local/bin/vim
+	editor = vim

@@ -20,3 +20,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3E3D32   ctermbg=235
 
 colorscheme molokai
 let g:Powerline_symbols="fancy"
+
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOPATH/misc/vim
+filetype plugin indent on
+syntax on

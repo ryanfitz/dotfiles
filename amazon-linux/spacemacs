@@ -262,6 +262,10 @@ layers configuration. You are free to put any user code."
       (kbd "\C-e") 'neotree-toggle
     )
   )
+  (eval-after-load 'flycheck 
+  '(progn
+    (setq flycheck-disabled-checkers '(javascript-jshint))
+    (setq flycheck-checkers '(javascript-eslint))))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

@@ -76,5 +76,5 @@ function start-dev-instance() {
 
 function ssh-dev() {
   awshost=$( dev_instance_hostname )
-  ssh -l ec2-user ${awshost}
+  ssh -A -l ec2-user ${awshost}
 }
